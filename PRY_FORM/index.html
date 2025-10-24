@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCCION A LOS FORMULARIOS</title>
+</head>
+<body>
+
+    <header>
+        <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+
+    <main>
+
+        <form action="server.html" method="get">
+
+            <label for="apellido">INGRESE SU APELLIDO: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ejm: SABANDO" maxlength="5" minlength="3"><br><br>
+            
+            <label for="nombres">INGRESE SU NOMBRE: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ejm: ANGEL" maxlength="5" minlength="3"><br><br>
+            
+            <!--NUMBER-->
+
+            <label for="edad">INGRESE SU EDAD: </label>
+            <input type="number" name="edad" id="edad" min="5" max="75" placeholder="20"><br><br>
+
+            <!-- EMAIL -->
+
+            <label for="mail">INGRESE SU EMAIL: </label>
+            <input type="email" name="email" id="email" placeholder="Ejm ajsabando@espe.edu.ec" size="20"><br><br>
+
+            <!-- FECHA -->
+
+            <label for="fecha">INGRESE SU FECHA DE NACIMIENTO: </label>
+            <input type="date" name="fecha_nacimiento" id="fecha" value="2025-10-22" max="2025-10-25" min="2025-10-18"><br><br>
+
+            <!-- RADIO -->
+
+            <p>SELECCIONE SU SEXO</p>
+
+            <label for="sex">HOMBRE</label>
+            <input type="radio" name="sexo" id="hombre" value="HOMBRE" checked>
+
+            <label for="sex">MUJER</label>
+            <input type="radio" name="sexo" id="mujer" value="MUJER"><BR><BR></BR></BR>
+            
+            <!-- CHECKBOX -->
+
+            <label for="">SELECCIONES SUS DIAS DE CLASE DE PROGRAMACION WEB</label><br>
+
+            <label for="lunes">LUNES</label>
+            <input type="checkbox" name="dias[]" id="lunes">
+            <label for="martes">MARTES</label>
+            <input type="checkbox" name="dias[]" id="JUEVES">
+            <label for="viernes">VIERNES</label>
+            <input type="checkbox" name="dias[]" id="VIERNES"><br><br>
+
+            <!-- INPUT -->
+             <label for="foto">SUBA SU FOTO</label>
+             <input type="file" name="foto" id="foto" accept="application/pdf"><br><br>
+
+            <!-- COLOR -->
+
+            <label for="">INGRESE SU COLOR FAVORITO</label>
+            <input type="color" name="color" id="color" value="#58bf2b"><br><br>
+
+            <!-- RANGE -->
+
+            <label for="estatura">SELECCIONE SU ESTATURA</label>
+            <input type="range" name="estatura" id="estatura" value="25" min="10" max="250"><br><br>
+
+            <!-- SEARCH -->
+
+            <label for="cedula">BUSCAR POR CEDULA</label>
+            <input type="search" name="cedula" id="cedula"><br><br>
+
+            <!-- HIDDEN - PASSWORD -->
+
+            <label for="password">INGRESE SU CONTRASEÑO: </label>
+            <input type="password" name="password" id="password"  placeholder="********"><br><br>
+
+            <!-- RESET -->
+            <label for="vaciar">VACIAR FORMULARIO</label>
+            <input type="reset" name="vaciar" id="vaciar"><br><br>
+
+            <!-- SUBMIT -->
+            <input type="submit" name="enviar" id="enviar" value="ENVIAR FORMULARIO"">
+
+        </form>
+        
+    </main>
+
+    <footer>
+            
+    </footer>
+
+    
+</body>
+</html>
