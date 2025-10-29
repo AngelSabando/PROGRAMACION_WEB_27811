@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT</title>
+</head>
+<body>
+    
+    <header>
+        <h1>
+            SELECT EN FORMULARIOS
+        </h1>
+    </header>
+
+    <main>
+        
+        <form action="server.html" method="get">
+            
+            <!--SELECT PARA FORM-->
+            <fieldset>
+                <label for="lenguaje_programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label><br>
+            <select name="lenguaje_programacion" id="lenguaje_programacion">
+                <option value="c_mas_mas">C++</option>
+                <option value="java">JAVA</option>
+                <option value="python">PYTHON</option>
+                <option value="html" disabled>HTML</option>
+            </select><br><br>
+            </fieldset>
+            
+            <!-- select para form -->
+            <label for="musica_favorita">SELECCIONE SU MUSICA FAVORITA</label>
+            <select name="musica_favorita[]" id="musica_favorita" multiple required size="10" autofocus>
+                <optgroup title="REGUETON" label="REGUETON">
+                    <option value="loba">SHAKIRA LOBA</option>
+                    <option value="anoche" selected>BAD BUNNY</option>
+                    <option value="all_of_me">JHON LEJON ALL OF ME</option>
+                    <option value="triste" disabled>JOSE JOSE</option>
+                </optgroup>
+
+                <optgroup title="CHICHA" label="CHICHA">
+                    <option value="loba">SHAKIRA LOBA</option>
+                    <option value="anoche" selected>BAD BUNNY</option>
+                    <option value="all_of_me">JHON LEJON ALL OF ME</option>
+                    <option value="triste" disabled>JOSE JOSE</option>
+                </optgroup>
+            </select><br><br>
+
+            <!-- textarea para from -->
+            <label for="frase_motivadora">INGRESE SU FRASE DEL DIA DE HOY</label>
+            <textarea name="" id="" cols="30" rows="10" required>BUENOS DIAS CHICOS DE PROGRAMACION</textarea><br>
+
+            <!-- HIDDEN -->
+
+            <input type="hidden" name="cedula" value="1255342">
+
+
+            <button type="submit">ENVIAR AL SERVIDOR</button>
+            
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

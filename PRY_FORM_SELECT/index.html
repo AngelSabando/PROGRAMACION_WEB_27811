@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+</head>
+<body>
+    
+    <header>
+        <h1>REGISTRO A UNA CADERA</h1>
+        <p>El estudiante podra registrarse en una carrera</p>
+    </header>
+    <main>
+
+        <form action="server.html" method="get">
+
+        <fieldset>
+            <label for="cedula">Cedula:</label>
+            <input type="text" name="cedula" id="cedula" placeholder="1234567890" required pattern="[0-9]{10}" maxlength="10" title="La cedula debe tener 10 digitos numericos"><br><br>
+
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Angel Sabando" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$" title="El nombre solo puede contener letras y espacios"><br><br>
+
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="2005-01-01" max="2010-01-01" required>
+            
+        </fieldset>
+
+        <fieldset>
+            <label for="">Seleccione sus materias (maximo 5)</label><br>
+            <label for="calculo">Calculo</label>
+            <input type="checkbox" name="materias[]" id="calculo" value="matematicas" required><br>
+            <label for="edo">EDO</label>
+            <input type="checkbox" name="materias[]" id="edo" value="matematicas" required><br>
+            <label for="quimica">Quimica</label>
+            <input type="checkbox" name="materias[]" id="quimica" value="matematicas" required><br>
+            <label for="biologia">Biologia</label>
+            <input type="checkbox" name="materias[]" id="biologia" value="matematicas" required><br>
+            <label for="algebra">Algebra</label>
+            <input type="checkbox" name="materias[]" id="algebra" value="matematicas" required><br>
+            <label for="estadistica">Estadistica</label>
+            <input type="checkbox" name="materias[]" id="estadistica" value="matematicas" disabled>
+            
+            
+        </fieldset>
+
+        <fieldset>
+            <label for="hoja-vida">Envie su hoja de vida</label><br>
+            <input type="file" name="hoja-vida" id="hoja-vida" required accept=".pdf">
+        </fieldset><br>
+
+        <label for="id-banner">ID BANNER</label>
+        <input type="text" name="id-banner" id="id-banner" placeholder="ABC12345" required pattern="([A-Z]{3}[0-9]{5})" title="Debe contener 3 letras mayusculas seguida de 5 numeros"><br><br>
+
+    <footer>
+
+        <input type="submit" value="ENVIAR FORMULARIO">
+        <input type="reset" value="RESTABLECER FORMULARIO">
+
+        </form>
+
+    </footer>
+
+</body>
+</html>
