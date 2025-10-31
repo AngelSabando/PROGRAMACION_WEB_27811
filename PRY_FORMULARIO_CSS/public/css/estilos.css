@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555;
+}
+
+.input-text {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px 15px;
+    width: 70%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.textarea-control {
+    width: 80%;
+    height: 100px;
+    border: 2px solid #007bff;
+    color: #1e3a8a;
+    font-size: 14px;
+    padding: 8px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.select-control {
+    width: 250px;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-top: 5px;
+    border: 1px solid #adb5bd;
+}
+
+.radio-control, .checkbox-control {
+    width: 17px;
+    height: 17px;
+    accent-color: #dc3545; 
+    margin-right: 8px;
+    border: 1px solid #333;
+}
+
+.boton-enviar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
