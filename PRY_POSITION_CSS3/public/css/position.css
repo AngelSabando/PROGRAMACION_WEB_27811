@@ -1,0 +1,57 @@
+body{
+    background-color: aliceblue;
+}
+
+/* top, bottom, right, left no afecta ni se mueve */
+.caja-static{
+    position: static;
+    background-color: yellow    ;
+    margin: 2px 2px 2px 2px;
+    padding: 5px;
+    top: 100px;
+    right: 100px;
+}
+
+.caja-relative{
+    position: relative;
+    background-color: red   ;
+    margin: 2px 2px 2px 2px;
+    padding: 5px;
+    top: 10px;
+    left: 10px;
+}
+
+.contenedor{
+    position: absolute;
+    background-color: green;
+    height: 100px;
+    width: 500px;
+}
+
+.caja-absolute{
+    position: absolute;
+    background-color: blue ;
+    top: 50px;
+    left: 50px;
+}
+
+.caja-fixed{
+    position: fixed;
+    background-color: orange ;
+    top: 0;
+    right: 0;
+}
+
+.whatsapp{
+    position: fixed;
+    background-color: rgb(12, 12, 129);
+    bottom: 15px;
+    right: 15px;
+    border-radius: 55px;
+    color: white;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    box-shadow: 2px 2px gray;
+    
+}
